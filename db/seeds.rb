@@ -13,3 +13,8 @@ Dog.destroy_all
 Dogsitter.destroy_all
 Stroll.destroy_all
 
+100.times do 
+    city = City.create!(
+      city_name: Faker::Address.city,
+    )
+end
